@@ -277,7 +277,7 @@ public class ArticleListActivity extends AppCompatActivity implements
         if (isConnected) {
             status = "Online";
         } else {
-            status = getResources().getString(R.string.check_internet);
+            status = getResources().getString(R.string.internet);
         }
 
         final Snackbar snackbar = Snackbar.make(findViewById(R.id.mainView), status, Snackbar.LENGTH_INDEFINITE);

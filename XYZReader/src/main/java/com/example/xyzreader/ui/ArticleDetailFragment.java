@@ -152,7 +152,7 @@ public class ArticleDetailFragment extends Fragment implements
                 startActivity(Intent.createChooser(ShareCompat.IntentBuilder.from(getActivity())
                         .setType("text/plain")
                         .setText("Some sample text")
-                        .getIntent(), getString(R.string.action_share)));
+                        .getIntent(), getString(R.string.share)));
             }
         });
 
