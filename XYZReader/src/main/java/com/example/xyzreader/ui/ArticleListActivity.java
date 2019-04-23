@@ -71,6 +71,8 @@ public class ArticleListActivity extends AppCompatActivity implements
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_article_list);
+        mToolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(mToolbar);
 
         BroadcastReceiver networkChangeReceiver = new BroadcastReceiver() {
             @Override
@@ -91,7 +93,7 @@ public class ArticleListActivity extends AppCompatActivity implements
                 new IntentFilter(
                         ConnectivityManager.CONNECTIVITY_ACTION));
 
-        mToolbar = (Toolbar) findViewById(R.id.toolbar);
+
 
         final View toolbarContainerView = findViewById(R.id.toolbar_container);
 
